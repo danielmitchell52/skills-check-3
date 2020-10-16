@@ -1,0 +1,227 @@
+
+*{
+ margin: 0;
+ padding: 0;
+}
+
+/*Fonts */
+@font-face{
+    font-family: 'Roboto';
+    src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Open Sans';
+    src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Root fonts */
+:root{
+    --main-font:Roboto, sans-serif;
+    --second-font: Roboto, sans-serif;
+    --top-position:35%;
+    --background-color: rgb(200,200,200);
+    --main-font-size: 16px;
+}
+
+body{
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    background-color: var(--background-color);
+}
+
+/*Navigation */
+
+main{
+ background-color: rgba(200,200,200,0.5);
+}
+.navigation{
+    float: right;
+}
+.navigation a{
+    text-decoration: none;
+}
+
+.navigation img{
+    max-width: 30px;
+    width: 100%;
+    margin: 1px 2px;
+}
+
+.navigation a{
+    float: left;
+}
+
+/*Content */
+
+.content{
+    background: url(../Image/1005-5760x3840.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    top:calc(var(--top-position) - 20%);
+    padding: 192px;
+    text-align: center;
+    height: 375px;
+}
+
+    
+
+.content a{
+
+}
+
+.content a h2:hover{
+    color:rgba(200,200,200,0.5);
+}
+.content h2{
+    text-decoration: none;
+    outline: none;
+    font-size: 2rem;
+    font-family: var(--main-font);
+    white-space: nowrap;
+    text-align: center;
+    color: black;
+    
+}
+
+.content p{
+ font-size: 1.5rem;
+ font-family: var(--second-font);
+ white-space: nowrap;
+ text-align: center;
+}
+
+.content a{
+    color: black;
+}
+
+.word2{
+    color:rgba(200,200,200,0.5);
+}
+
+@media(min-width: 300px) and (max-width: 400px){
+    .content{
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    
+    }
+}
+
+/*Media Queries for 500px devices */
+@media(min-width: 500px){
+.content h2{
+    position: relative;
+    right: 10%;
+}
+.content p{
+ position: relative;
+ right: 20%;
+}
+.content p{
+    text-align: center;
+}
+}
+/*Media Queries for 600px devices */
+
+@media (min-width: 600px){
+    .content{
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    height: 425px;
+}
+
+.content h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+
+.content p{
+    text-align: center;
+}
+
+
+
+    .navigation img{
+        max-width: 40px;
+    };
+}
+
+/*Media Queries for 800px devices */
+@media (min-width: 800px){
+ .content{
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+ .navigation img{
+     max-width: 40px;
+     margin-right: 40px;
+     margin: 1px 2px;
+ }
+ .content h2{
+  margin-left: 65px;
+  font-size: 3rem;
+ }
+
+ .content p{
+ margin-left: 160px;
+ }
+}
+
+/*Media Queries for 1000px devices */
+@media(min-width: 1000px){
+
+
+
+
+.navigation img{
+    max-width: 50px;
+}
+
+.content h2{
+font-size: 4rem;
+text-decoration: none;
+outline: none;
+margin-left: 150px;
+}
+
+.content p{
+ font-size: 2rem;
+ text-align: center;
+ margin-left: 250px;
+}
+}
+
+/*Media Queries for 1200px devices */
+@media(min-width: 1200px){
+body{
+ background-image: url('../Image/1005-5760x3840.jpg');
+ background-repeat: no-repeat;
+ background-position: center;
+ overflow-x: hidden;
+}
+
+.content{
+    padding:0;
+    top:var(--top-position);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    height: 900px;
+}
+
+.content h2{
+    position: relative;
+    top: 20%;
+    left: 5%;
+}
+.content p{
+ margin-left: 780px;
+ margin-top: 200px;
+}
+}
